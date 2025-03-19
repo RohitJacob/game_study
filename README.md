@@ -61,15 +61,36 @@ Expected in-game purchase per offer: $0.98
 
 ## Question 3: Recommended Task Structure Adjustments
 
-### Current Structure Limitations
-- Large gaps between reward tiers (levels 35, 100, 175) lead to user drop-off
-- Final reward at level 175 requires significant time investment (50 days average)
-- Linear reward structure doesn't account for different player types
+Our analysis reveals several concerning patterns:
+1. The offer completion rate is significantly low
+2. There's a sharp decline in user retention after the first week
+3. The current reward structure doesn't align with game difficulty progression
 
-### Recommended Adjustments
-1. **Add Intermediate Reward Tiers**: Insert rewards at levels 60 and 140 to maintain engagement
-2. **Implement Early Engagement Bonuses**: Provide small rewards for consistent daily play in first 14 days
-3. **Weekend Multipliers**: Offer enhanced rewards for weekend play to capitalize on higher engagement
-4. **Personalized Reward Paths**: Create parallel reward structures for different player types (casual vs. hardcore)
+### Possible Hypotheses for Low Completion and High Churn:
+- Game difficulty increases causing players to abandon
+- Reward milestones appear unattainable, discouraging continued play
+- The effort-to-reward ratio becomes increasingly unfavorable
+- Players experience burnout due to the sustained high level requirements
 
+### Proposed Structural Changes:
 
+1. Progressive Difficulty Adjustment
+- Align reward timeframes with the natural difficulty curve of the game
+- Decrease the levels-per-day requirement as players progress to higher levels
+- Current data shows Level 100 requires 5 levels/day while Level 175 requires 3.5 levels/day, but the latter offers less reward_per_level than reaching level 0 to 35
+
+2. Balanced Effort-to-Reward Ratio
+- Maintain or increase the reward-per-level as difficulty increases
+- From our data, the reward-per-level decreases from 0.29 for Level 35 to 0.20 for Level 100, then slightly increases to 0.23 for Level 175
+- This declining reward ratio likely contributes to player disengagement
+
+3. Micro-Rewards and Engagement Hooks
+- Implement smaller, more frequent rewards between major milestones to maintain interest
+- Create a "streak" bonus system to encourage daily/weekly play
+- Consider weekly mini-goals that align with the observed weekly engagement cycle
+
+4. Early Retention Focus
+- Front-load more attainable rewards in the first 7-10 days to combat the week-one drop-off
+- Create incentives to push users through the initial difficulty curve
+
+By restructuring rewards to better match player progression patterns and psychological motivators, we can likely improve both completion rates and overall retention, ultimately increasing the ROI for both Almeida and the game developer.
